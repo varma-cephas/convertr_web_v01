@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ConvertR</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class="greet_user__user_avatar_container">
+            <div class="greet_user__user_avatar__inner_container">
+                <h1><span class="user_greeting">Hi</span>, <span class="user_name">Varma!</span></h1>
+                <div class="user_avatar_container">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <form class="currency_converter_form">
+                <div class="currency_converter__inner_container">
+                <div class="input_currency_container">
+                    <input type="number" class="currency_amount_input" placeholder="Amount">
+                </div>
+                <div class="select_currency_container">
+                    <div>
+                        <select class="origin_currency_select_option">
+ 
+                        </select>
+                    </div>
+                    <img class="currency_select_arrow" src="./assets/right_arrow.svg" alt="">
+                    <div>
+                        <select class="convert_currency_select_option">
+ 
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="conversion_rate__inner_container">
+                        <h2>
+                            <i>Conversion Rate</i>
+                        </h2>
+                       <div class="currency_rate_container">
+                            <div>
+                                <span class="origin_currency_conversion_rate"></span> 
+                            </div>
+                                <img class="arrow" src="./assets/right_arrow.svg" alt="">
+                            <div>
+                                <span class="converted_currency_conversion_rate"></span>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="convert_button_container">
+                        <input class="convert_button" type="submit" value="Convert">
+                    </div>
+                </div>
+                </div>
+            </form>
+            <div class="converted_currency_value_output_container">
+                <div class="converted_currency_value_output__inner_container">
+                    <h2 >
+                        <i class="converted_currency_value_output"></i>
+                    </h2>
+                    <div class="converted_currency_rate_value">
+                        <span class="origin_currency_conversion_rate__output"></span> =
+
+                        <span class="converted_currency_conversion_rate__output"></span>
+                    </div>
+                    <img class="back_arrow" src="./assets/left_arrow.svg" alt="left_arrow">
+                </div>
+            </div>
+            <div class="input_currency_through_voice">
+                <!-- <div class="input_currency_through_voice__inner_container"> -->
+                    <!-- <img class="microphone" src="./assets/microphone.svg" alt=""> -->
+                </div>
+            </div>
+        </section>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
