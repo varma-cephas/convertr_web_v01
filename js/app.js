@@ -17,7 +17,7 @@ const converted_currency_rate_value = document.querySelector(".converted_currenc
 const origin_currency_conversion_rate__output = document.querySelector(".origin_currency_conversion_rate__output");
 const converted_currency_conversion_rate__output = document.querySelector(".converted_currency_conversion_rate__output");
 
-const microphone = document.querySelector(".input_currency_through_voice__inner_container")
+// const microphone = document.querySelector(".input_currency_through_voice__inner_container");
 
 let final_converted_currency;
 
@@ -79,7 +79,7 @@ currency_converter_form.addEventListener("submit", (event)=>{
         converted_currency_conversion_rate__output.textContent = converted_currency_conversion_rate.textContent;
 
         currency_converter__inner_container.style.display = "none";
-        microphone.style.display = "none";
+        // microphone.style.display = "none";
         converted_currency_value_output.style.display = "block";
         converted_currency_rate_value.style.display = "block";
 
@@ -87,14 +87,13 @@ currency_converter_form.addEventListener("submit", (event)=>{
     }else{
         alert("Please enter a valid amount that is above zero")
     }
-
     event.preventDefault();
 })
 
 
 back_arrow.addEventListener("click", ()=>{
     currency_converter__inner_container.style.display = "block";
-    microphone.style.display = "block";
+    // microphone.style.display = "block";
 
     converted_currency_value_output.style.display = "none";
     converted_currency_rate_value.style.display = "none";
